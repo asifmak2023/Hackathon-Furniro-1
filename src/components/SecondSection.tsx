@@ -1,7 +1,7 @@
 export default function SecondSection() {
 
     return (
-        <div className="px-10 py-16 text-center">
+        <div className="px-10 py-16 text-center container py-10 px-10 mx-0 min-w-full flex flex-col items-center">
             <h1 className="text font-bold text-3xl">Browse The Range</h1>
 
             <div className="flex flex-row">
