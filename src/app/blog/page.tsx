@@ -9,7 +9,6 @@ export default function Home() {
         <Header />
         <BlogHeroSection />
         <BlogsData />
-        <BlogSidebar />
         <Footer />
         
     </div>
