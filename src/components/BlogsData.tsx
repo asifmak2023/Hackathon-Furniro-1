@@ -81,9 +81,10 @@ export default function BlogsData() {
                                 <form>
                                     <input
                                         type="text"
-                                        placeholder="Search"
-                                        className="w-full border border-gray-300 p-2 rounded-lg focus:outline-none focus:ring-1 focus:ring-yellow-500"
+                                        placeholder="Search Something 🔎"
+                                        className="w-full border border-gray-300 p-2 rounded-lg text-center focus:outline-none focus:ring-1 focus:ring-yellow-500"
                                     />
+                                    
                                 </form>
                             </div>
 

@@ -1,4 +1,7 @@
-import Head from "next/head";
+'use client'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser, faHeart, } from "@fortawesome/free-regular-svg-icons";
+import { faShoppingCart, faSearch, } from "@fortawesome/free-solid-svg-icons";
 export default function Header() {
   return (
     <header className="flex justify-between items-center px-6 py-4 bg-white shadow">
@@ -15,17 +18,17 @@ export default function Header() {
         <a href="/contact" className="hover:text-yellow-600">Contact</a>
       </nav>
       <div className="flex items-center space-x-4">
-        <a href="#" className="text-gray-700 hover:text-yellow-600">
-          <i className="fas fa-user"></i>
+        <a href="#" className="text-black-700 hover:text-yellow-600">
+          <FontAwesomeIcon icon={faUser} />
         </a>
-        <a href="#" className="text-gray-700 hover:text-yellow-600">
-          <i className="fas fa-search"></i>
+        <a href="#" className="text-black-700 hover:text-yellow-600">
+          <FontAwesomeIcon icon={faSearch} />
         </a>
-        <a href="#" className="text-gray-700 hover:text-yellow-600">
-          <i className="fas fa-heart"></i>
+        <a href="#" className="text-black-700 hover:text-yellow-600">
+          <FontAwesomeIcon icon={faHeart} />
         </a>
-        <a href="#" className="text-gray-700 hover:text-yellow-600">
-          <i className="fas fa-shopping-cart"></i>
+        <a href="/cart" className="text-black-700 hover:text-yellow-600">
+          <FontAwesomeIcon icon={faShoppingCart} />
         </a>
       </div>
     </header>

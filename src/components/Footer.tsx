@@ -2,7 +2,7 @@ export default function () {
     return (
 
 
-        <footer className="bg-gray-50 border-t border-gray-200 py-8 mt-10">
+        <footer className="bg-gray-50 border-t border-gray-200 py-8 mt- 0">
             <div className="container mx-auto px-4 flex flex-wrap justify-between">
                 <div className="w-full sm:w-1/4 mb-6 sm:mb-0">
                     <h4 className="text-lg font-bold text-gray-800 mb-4">Funiro.</h4>
