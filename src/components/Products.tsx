@@ -1,156 +1,76 @@
 export default function Products() {
     return (
-        <div className="container py-10 px-10 mx-0 min-w-full flex flex-col items-center">
-           <h1 className="text font-bold text-3xl my-10">Products</h1>
-            <div className="flex">
+        <div className="container py-10 px-10 mx-0 min-w-full">
+            <h1 className="text-3xl font-extrabold my-10 text-center">Products</h1>
 
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 
-
-                <div className="max-w-sm bg-white pr-5 pl-5">
+                <div className="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden">
                     <a href="#">
-                        <img className="" src="/images/product1.png" alt="" />
+                        <img src="/images/product1.png" alt="Syltherine stylish cafe chair" className="w-full h-64 object-cover" />
                     </a>
                     <div className="p-5">
                         <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Syltherine</h5>
+                            <h5 className="mb-2 text-2xl font-bold text-gray-900">Syltherine</h5>
                         </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Stylish cafe chair</p>
-                        <a href="#">
-                            <h5 className="mb-2 text-1xl tracking-tight text-gray-900 dark:text-white">Rp 2.500.000
-                                <span className="text text-gray-500 pl-10 text-sm line-through">Rp 3.500.000</span>
-                            </h5>
-                        </a>
-
+                        <p className="mb-3 text-gray-700">Stylish cafe chair</p>
+                        <h5 className="text-xl text-gray-900">Rp 2.500.000
+                            <span className="text-gray-500 pl-5 text-sm line-through">Rp 3.500.000</span>
+                        </h5>
                     </div>
                 </div>
-                <div className="max-w-sm bg-white pr-5">
+
+                <div className="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden">
                     <a href="#">
-                        <img className="" src="/images/product2.png" alt="" />
+                        <img src="/images/product2.png" alt="Leviosa stylish cafe chair" className="w-full h-64 object-cover" />
                     </a>
                     <div className="p-5">
                         <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Leviosa</h5>
+                            <h5 className="mb-2 text-2xl font-bold text-gray-900">Leviosa</h5>
                         </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Stylish cafe chair</p>
-                        <a href="#">
-                            <h5 className="mb-2 text-1xl tracking-tight text-gray-900 dark:text-white">Rp 2.500.000
-                            </h5>
-                        </a>
-
+                        <p className="mb-3 text-gray-700">Stylish cafe chair</p>
+                        <h5 className="text-xl text-gray-900">Rp 2.500.000</h5>
                     </div>
                 </div>
-                <div className="max-w-sm bg-white pr-5">
+
+                <div className="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden">
                     <a href="#">
-                        <img className="" src="/images/product3.png" alt="" />
+                        <img src="/images/product3.png" alt="Lolito luxury big sofa" className="w-full h-64 object-cover" />
                     </a>
                     <div className="p-5">
                         <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lolito</h5>
+                            <h5 className="mb-2 text-2xl font-bold text-gray-900">Lolito</h5>
                         </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Luxury big sofa</p>
-                        <a href="#">
-                            <h5 className="mb-2 text-1xl tracking-tight text-gray-900 dark:text-white">Rp 7.000.000
-                                <span className="text text-gray-500 pl-10 text-sm line-through">Rp 14.500.000</span>
-                            </h5>
-                        </a>
-
+                        <p className="mb-3 text-gray-700">Luxury big sofa</p>
+                        <h5 className="text-xl text-gray-900">Rp 7.000.000
+                            <span className="text-gray-500 pl-5 text-sm line-through">Rp 14.500.000</span>
+                        </h5>
                     </div>
                 </div>
-                <div className="max-w-sm bg-white pr-5">
+
+                <div className="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden">
                     <a href="#">
-                        <img className="" src="/images/product4.png" alt="" />
+                        <img src="/images/product4.png" alt="Respira outdoor bar table and stool" className="w-full h-64 object-cover" />
                     </a>
                     <div className="p-5">
                         <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Respira</h5>
+                            <h5 className="mb-2 text-2xl font-bold text-gray-900">Respira</h5>
                         </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Outdoor bar table and stool</p>
-                        <a href="#">
-                            <h5 className="mb-2 text-1xl tracking-tight text-gray-900 dark:text-white">Rp 500.000
-                            </h5>
-                        </a>
-
+                        <p className="mb-3 text-gray-700">Outdoor bar table and stool</p>
+                        <h5 className="text-xl text-gray-900">Rp 500.000</h5>
                     </div>
                 </div>
 
             </div>
-            <div className="flex">
 
-
-
-                <div className="max-w-sm bg-white pr-5 pl-5">
-                    <a href="#">
-                        <img className="" src="/images/product1.png" alt="" />
-                    </a>
-                    <div className="p-5">
-                        <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Grifo</h5>
-                        </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Night lamp</p>
-                        <a href="#">
-                            <h5 className="mb-2 text-1xl tracking-tight text-gray-900 dark:text-white">Rp 1.500.000
-                            </h5>
-                        </a>
-
-                    </div>
-                </div>
-                <div className="max-w-sm bg-white pr-5">
-                    <a href="#">
-                        <img className="" src="/images/product2.png" alt="" />
-                    </a>
-                    <div className="p-5">
-                        <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Muggo</h5>
-                        </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Small mug</p>
-                        <a href="#">
-                            <h5 className="mb-2 text-1xl tracking-tight text-gray-900 dark:text-white">Rp 150.000
-                            </h5>
-                        </a>
-
-                    </div>
-                </div>
-                <div className="max-w-sm bg-white pr-5">
-                    <a href="#">
-                        <img className="" src="/images/product3.png" alt="" />
-                    </a>
-                    <div className="p-5">
-                        <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Pingky</h5>
-                        </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Cute bed set</p>
-                        <a href="#">
-                            <h5 className="mb-2 text-1xl tracking-tight text-gray-900 dark:text-white">Rp 7.000.000
-                                <span className="text text-gray-500 pl-10 text-sm line-through">Rp 14.500.000</span>
-                            </h5>
-                        </a>
-
-                    </div>
-                </div>
-                <div className="max-w-sm bg-white pr-5">
-                    <a href="#">
-                        <img className="" src="/images/product4.png" alt="" />
-                    </a>
-                    <div className="p-5">
-                        <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Potty</h5>
-                        </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Minimalist flower pot</p>
-                        <a href="#">
-                            <h5 className="mb-2 text-1xl tracking-tight text-gray-900 dark:text-white">Rp 500.000
-                            </h5>
-                        </a>
-
-                    </div>
-                </div>
-
+            <div className="flex justify-center mt-10">
+                <button
+                    type="button"
+                    className="py-3 px-6 text-xl font-medium text-white bg-orange-500 border border-orange-500 rounded-lg hover:bg-orange-600"
+                >
+                    <a href="/shop">Show More</a>
+                </button>
             </div>
-            <div className="container py-10 px-10 mx-0 min-w-full flex flex-col items-center">
-                
-            <button type="button" className="py-5 px-5 me-2 mt-2  mb-2 text-xl font-medium text-gray-900  bg-white  border border-orange-500 :hover:bg-orange-500 "> <a href="/shop">Show More</a></button>
-            </div>
-
         </div>
-
     );
 }

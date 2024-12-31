@@ -1,238 +1,109 @@
 export default function ShopProducts() {
+    const products = [
+        {
+            name: "Syltherine",
+            description: "Stylish cafe chair",
+            price: "Rp 2.500.000",
+            originalPrice: "Rp 3.500.000",
+            image: "/images/product1.png",
+        },
+        {
+            name: "Leviosa",
+            description: "Stylish cafe chair",
+            price: "Rp 2.500.000",
+            image: "/images/product2.png",
+        },
+        {
+            name: "Lolito",
+            description: "Luxury big sofa",
+            price: "Rp 7.000.000",
+            originalPrice: "Rp 14.500.000",
+            image: "/images/product3.png",
+        },
+        {
+            name: "Respira",
+            description: "Outdoor bar table and stool",
+            price: "Rp 500.000",
+            image: "/images/product4.png",
+        },
+        {
+            name: "Grifo",
+            description: "Night lamp",
+            price: "Rp 1.500.000",
+            image: "/images/product1.png",
+        },
+        {
+            name: "Muggo",
+            description: "Small mug",
+            price: "Rp 150.000",
+            image: "/images/product2.png",
+        },
+        {
+            name: "Pingky",
+            description: "Cute bed set",
+            price: "Rp 7.000.000",
+            originalPrice: "Rp 14.500.000",
+            image: "/images/product3.png",
+        },
+        {
+            name: "Potty",
+            description: "Minimalist flower pot",
+            price: "Rp 500.000",
+            image: "/images/product4.png",
+        },
+    ];
+
     return (
-
-        <div className="my-12 ">
-
-            <div className="flex  justify-center">
-
-
-
-                <div className="max-w-sm bg-white pr-5 pl-5">
-                    <a href="#">
-                        <img className="" src="/images/product1.png" alt="" />
-                    </a>
-                    <div className="p-5">
+        <div className="my-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                {products.map((product, index) => (
+                    <div key={index} className="max-w-sm bg-white shadow-md rounded-lg overflow-hidden">
                         <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Syltherine</h5>
+                            <img className="w-full h-64 object-cover" src={product.image} alt={product.name} />
                         </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Stylish cafe chair</p>
-                        <a href="#">
-                            <h5 className="mb-2 text-1xl tracking-tight text-gray-900 dark:text-white">Rp 2.500.000
-                                <span className="text text-gray-500 pl-10 text-sm line-through">Rp 3.500.000</span>
+                        <div className="p-5">
+                            <a href="#">
+                                <h5 className="mb-2 text-2xl font-bold text-gray-900">{product.name}</h5>
+                            </a>
+                            <p className="mb-3 text-gray-700">{product.description}</p>
+                            <h5 className="text-xl text-gray-900">
+                                {product.price}
+                                {product.originalPrice && (
+                                    <span className="text-gray-500 pl-5 text-sm line-through">{product.originalPrice}</span>
+                                )}
                             </h5>
-                        </a>
-
+                        </div>
                     </div>
-                </div>
-                <div className="max-w-sm bg-white pr-5">
-                    <a href="#">
-                        <img className="" src="/images/product2.png" alt="" />
-                    </a>
-                    <div className="p-5">
-                        <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Leviosa</h5>
-                        </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Stylish cafe chair</p>
-                        <a href="#">
-                            <h5 className="mb-2 text-1xl tracking-tight text-gray-900 dark:text-white">Rp 2.500.000
-                            </h5>
-                        </a>
-
-                    </div>
-                </div>
-                <div className="max-w-sm bg-white pr-5">
-                    <a href="#">
-                        <img className="" src="/images/product3.png" alt="" />
-                    </a>
-                    <div className="p-5">
-                        <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lolito</h5>
-                        </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Luxury big sofa</p>
-                        <a href="#">
-                            <h5 className="mb-2 text-1xl tracking-tight text-gray-900 dark:text-white">Rp 7.000.000
-                                <span className="text text-gray-500 pl-10 text-sm line-through">Rp 14.500.000</span>
-                            </h5>
-                        </a>
-
-                    </div>
-                </div>
-                <div className="max-w-sm bg-white pr-5">
-                    <a href="#">
-                        <img className="" src="/images/product4.png" alt="" />
-                    </a>
-                    <div className="p-5">
-                        <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Respira</h5>
-                        </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Outdoor bar table and stool</p>
-                        <a href="#">
-                            <h5 className="mb-2 text-1xl tracking-tight text-gray-900 dark:text-white">Rp 500.000
-                            </h5>
-                        </a>
-
-                    </div>
-                </div>
-
-            </div >
-
-            <div className="flex justify-center">
-
-
-
-                <div className="max-w-sm bg-white pr-5 pl-5">
-                    <a href="#">
-                        <img className="" src="/images/product1.png" alt="" />
-                    </a>
-                    <div className="p-5">
-                        <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Grifo</h5>
-                        </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Night lamp</p>
-                        <a href="#">
-                            <h5 className="mb-2 text-1xl tracking-tight text-gray-900 dark:text-white">Rp 1.500.000
-                            </h5>
-                        </a>
-
-                    </div>
-                </div>
-                <div className="max-w-sm bg-white pr-5">
-                    <a href="#">
-                        <img className="" src="/images/product2.png" alt="" />
-                    </a>
-                    <div className="p-5">
-                        <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Muggo</h5>
-                        </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Small mug</p>
-                        <a href="#">
-                            <h5 className="mb-2 text-1xl tracking-tight text-gray-900 dark:text-white">Rp 150.000
-                            </h5>
-                        </a>
-
-                    </div>
-                </div>
-                <div className="max-w-sm bg-white pr-5">
-                    <a href="#">
-                        <img className="" src="/images/product3.png" alt="" />
-                    </a>
-                    <div className="p-5">
-                        <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Pingky</h5>
-                        </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Cute bed set</p>
-                        <a href="#">
-                            <h5 className="mb-2 text-1xl tracking-tight text-gray-900 dark:text-white">Rp 7.000.000
-                                <span className="text text-gray-500 pl-10 text-sm line-through">Rp 14.500.000</span>
-                            </h5>
-                        </a>
-
-                    </div>
-                </div>
-                <div className="max-w-sm bg-white pr-5">
-                    <a href="#">
-                        <img className="" src="/images/product4.png" alt="" />
-                    </a>
-                    <div className="p-5">
-                        <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Potty</h5>
-                        </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Minimalist flower pot</p>
-                        <a href="#">
-                            <h5 className="mb-2 text-1xl tracking-tight text-gray-900 dark:text-white">Rp 500.000
-                            </h5>
-                        </a>
-
-                    </div>
-                </div>
-
+                ))}
             </div>
 
-
-
-            <div className="flex justify-center">
-
-
-
-                <div className="max-w-sm bg-white pr-5 pl-5">
-                    <a href="#">
-                        <img className="" src="/images/product1.png" alt="" />
-                    </a>
-                    <div className="p-5">
-                        <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Grifo</h5>
-                        </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Night lamp</p>
-                        <a href="#">
-                            <h5 className="mb-2 text-1xl tracking-tight text-gray-900 dark:text-white">Rp 1.500.000
-                            </h5>
-                        </a>
-
-                    </div>
-                </div>
-                <div className="max-w-sm bg-white pr-5">
-                    <a href="#">
-                        <img className="" src="/images/product2.png" alt="" />
-                    </a>
-                    <div className="p-5">
-                        <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Muggo</h5>
-                        </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Small mug</p>
-                        <a href="#">
-                            <h5 className="mb-2 text-1xl tracking-tight text-gray-900 dark:text-white">Rp 150.000
-                            </h5>
-                        </a>
-
-                    </div>
-                </div>
-                <div className="max-w-sm bg-white pr-5">
-                    <a href="#">
-                        <img className="" src="/images/product3.png" alt="" />
-                    </a>
-                    <div className="p-5">
-                        <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Pingky</h5>
-                        </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Cute bed set</p>
-                        <a href="#">
-                            <h5 className="mb-2 text-1xl tracking-tight text-gray-900 dark:text-white">Rp 7.000.000
-                                <span className="text text-gray-500 pl-10 text-sm line-through">Rp 14.500.000</span>
-                            </h5>
-                        </a>
-
-                    </div>
-                </div>
-                <div className="max-w-sm bg-white pr-5">
-                    <a href="#">
-                        <img className="" src="/images/product4.png" alt="" />
-                    </a>
-                    <div className="p-5">
-                        <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Potty</h5>
-                        </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Minimalist flower pot</p>
-                        <a href="#">
-                            <h5 className="mb-2 text-1xl tracking-tight text-gray-900 dark:text-white">Rp 500.000
-                            </h5>
-                        </a>
-
-                    </div>
-                </div>
-
+            {/* Pagination */}
+            <div className="flex justify-center mt-8">
+                <button
+                    type="button"
+                    className="text-white bg-amber-600 hover:bg-amber-500 text-xl py-3 px-6 rounded-lg mr-2"
+                >
+                    1
+                </button>
+                <button
+                    type="button"
+                    className="text-black bg-[#F9F1E7] hover:bg-amber-500 text-xl py-3 px-6 rounded-lg mr-2"
+                >
+                    2
+                </button>
+                <button
+                    type="button"
+                    className="text-black bg-[#F9F1E7] hover:bg-amber-500 text-xl py-3 px-6 rounded-lg mr-2"
+                >
+                    3
+                </button>
+                <button
+                    type="button"
+                    className="text-black bg-[#F9F1E7] hover:bg-amber-500 text-xl py-3 px-6 rounded-lg"
+                >
+                    Next
+                </button>
             </div>
-
-
-            <div className="flex justify-center">
-                <button type="button" className="text-white bg-amber-600 hover:bg-amber-bg-amber-600 text-xl pr-8 py-6 pl-8 py-6 rounded-xl mr-5 ">1</button>
-                <button type="button" className="text-black bg-[#F9F1E7] hover:bg-amber-bg-amber-600 text-xl pr-8 py-6 pl-8 py-6 rounded-xl mr-5">2</button>
-                <button type="button" className="text-black bg-[#F9F1E7] hover:bg-amber-bg-amber-600 text-xl pr-8 py-6 pl-8 py-6 rounded-xl mr-5">3</button>
-                <button type="button" className="text-black bg-[#F9F1E7] hover:bg-amber-bg-amber-600 text-xl pr-8 py-6 pl-8 py-6 rounded-xl mr-5">Next</button>
-
-            </div>
-            
-        </div >
-
-
+        </div>
     );
 }
