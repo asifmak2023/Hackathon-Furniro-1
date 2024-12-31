@@ -1,6 +1,6 @@
 export default function ThirdSection() {
     return (
-        <div className="container w-full h-full py-16">
+        <div className="container mx-auto w-full h-full py-16">
 
             {/* Title and Description Section */}
             <div className="text-center mb-8 bg-amber-100 py-8">
@@ -12,7 +12,7 @@ export default function ThirdSection() {
             </div>
 
             {/* Responsive Grid Layout */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-center">
                 {/* Room 1 */}
                 <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md">
                     <img src="images/inner-peace.png" alt="Bedroom" className="w-full h-64 object-cover" />
